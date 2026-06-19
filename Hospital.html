@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en"><head><script src="/_sdk/telemetry_sdk.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedCare Hospital</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+  <style>
+        body { font-family: 'DM Sans', sans-serif; }
+        .font-heading { font-family: 'Playfair Display', serif; }
+        html { scroll-behavior: smooth; }
+    </style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full min-h-screen" style="background: rgb(248, 250, 250);">
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur shadow-sm">
+   <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <h1 data-template-id="nav-logo" class="canva-text font-heading text-2xl font-bold" style="color: rgb(13, 148, 136); font-weight: 700; font-style: normal; font-size: 32px;">MedCare Hospital</h1>
+    <div class="hidden md:flex gap-8 items-center">
+     <a href="#about" class="text-gray-700 hover:text-teal-600 transition">About</a> <a href="#services" class="text-gray-700 hover:text-teal-600 transition">Services</a> <a href="#doctors" class="text-gray-700 hover:text-teal-600 transition">Doctors</a> <a href="#hmo-partners" class="text-gray-700 hover:text-teal-600 transition">HMOs</a> <a href="#contact" class="text-gray-700 hover:text-teal-600 transition">Contact</a>
+    </div><button id="mobile-menu-btn" class="md:hidden" aria-label="Menu"><i data-lucide="menu" class="w-6 h-6"></i></button>
+   </div>
+   <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+    <a href="#about" class="block py-2 text-gray-700">About</a> <a href="#services" class="block py-2 text-gray-700">Services</a> <a href="#doctors" class="block py-2 text-gray-700">Doctors</a> <a href="#hmo-partners" class="block py-2 text-gray-700">HMOs</a> <a href="#contact" class="block py-2 text-gray-700">Contact</a>
+   </div>
+  </nav><!-- Hero -->
+  <header class="relative w-full pt-20" style="min-height: calc(85 * min(var(--vh, 1vh), 1vh));">
+   <div class="absolute inset-0">
+    <img data-template-id="hero-image" class="canva-image w-full h-full object-cover" loading="lazy" src="https://images.pexels.com/photos/5452247/pexels-photo-5452247.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920" alt="Group of medical professionals standing confidently with folded arms in uniform.">
+    <div class="absolute inset-0 bg-gradient-to-r from-teal-900/80 to-teal-800/40"></div>
+   </div>
+   <div class="relative z-10 max-w-7xl mx-auto px-4 flex items-center h-full" style="min-height: calc(75 * min(var(--vh, 1vh), 1vh));">
+    <div class="max-w-xl text-white">
+     <h2 data-template-id="hero-title" class="canva-text font-heading text-5xl md:text-6xl leading-tight" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Your Health, Our Priority</h2>
+     <p data-template-id="hero-subtitle" class="canva-text mt-4 text-lg opacity-90" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">Providing world-class healthcare services with compassion and excellence across Lagos and beyond.</p><a href="#contact" data-template-id="hero-cta" class="canva-button inline-block mt-8 px-8 py-4 rounded-full font-semibold text-lg transition hover:scale-105" style="background: rgb(13, 148, 136); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Book an Appointment</a>
+    </div>
+   </div>
+  </header>
+  <main>
+   <!-- About -->
+   <section id="about" class="w-full py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+     <div>
+      <h3 data-template-id="about-title" class="canva-text font-heading" style="color: rgb(19, 78, 74); font-weight: 700; font-style: normal; font-size: 19px;">About MedCare Hospital</h3>
+      <p data-template-id="about-text" class="canva-text mt-4 leading-relaxed" style="color: rgb(55, 65, 81); font-weight: 400; font-style: normal; font-size: 16px;">Founded with a vision to provide accessible, affordable, and quality healthcare, MedCare Hospital has been serving families for over 15 years. Our team of dedicated professionals combines cutting-edge medical technology with genuine compassion to ensure every patient receives the best care possible.</p>
+     </div><img data-template-id="about-image" class="canva-image w-full h-80 object-cover rounded-2xl shadow-lg" loading="lazy" src="https://images.pexels.com/photos/5452209/pexels-photo-5452209.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Three doctors in medical gowns with stethoscopes standing confidently indoors.">
+    </div>
+   </section><!-- Services -->
+   <section id="services" data-template-id="services-section" class="canva-section w-full py-20" style="background: rgb(240, 253, 250);">
+    <div class="max-w-7xl mx-auto px-4">
+     <h3 data-template-id="services-title" class="canva-text font-heading text-center mb-12" style="color: rgb(19, 78, 74); font-weight: 700; font-style: normal; font-size: 19px;">Our Services</h3>
+     <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+       <img data-template-id="service1-image" class="canva-image w-full h-48 object-cover" loading="lazy" src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A doctor and patient engaging in a positive consultation in a bright clinic setting.">
+       <div class="p-6">
+        <h4 data-template-id="service1-title" class="canva-text font-bold text-lg" style="color: rgb(17, 24, 39); font-weight: 700; font-style: normal; font-size: 16px;">General Consultation</h4>
+        <p data-template-id="service1-desc" class="canva-text mt-2" style="color: rgb(75, 85, 99); font-weight: 400; font-style: normal; font-size: 16px;">Comprehensive health assessments and medical advice from experienced physicians.</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+       <img data-template-id="service2-image" class="canva-image w-full h-48 object-cover" loading="lazy" src="https://images.pexels.com/photos/34185202/pexels-photo-34185202.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="A nurse attends to a young patient while a guardian looks on in a hospital ward.">
+       <div class="p-6">
+        <h4 data-template-id="service2-title" class="canva-text font-bold text-lg" style="color: rgb(17, 24, 39); font-weight: 700; font-style: normal; font-size: 16px;">Maternity &amp; Pediatric Care</h4>
+        <p data-template-id="service2-desc" class="canva-text mt-2" style="color: rgb(75, 85, 99); font-weight: 400; font-style: normal; font-size: 16px;">Dedicated support for mothers and children from prenatal to postnatal stages.</p>
+       </div>
+      </div>
+      <div class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+       <img data-template-id="service3-image" class="canva-image w-full h-48 object-cover" loading="lazy" src="https://images.pexels.com/photos/247786/pexels-photo-247786.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="View of Operating Room">
+       <div class="p-6">
+        <h4 data-template-id="service3-title" class="canva-text font-bold text-lg" style="color: rgb(17, 24, 39); font-weight: 700; font-style: normal; font-size: 16px;">Surgical Services</h4>
+        <p data-template-id="service3-desc" class="canva-text mt-2" style="color: rgb(75, 85, 99); font-weight: 400; font-style: normal; font-size: 16px;">State-of-the-art surgical facilities with skilled surgeons for all procedures.</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Doctors -->
+   <section id="doctors" class="w-full py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+     <h3 data-template-id="doctors-title" class="canva-text font-heading text-center mb-12" style="color: rgb(19, 78, 74); font-weight: 700; font-style: normal; font-size: 19px;">Meet Our Doctors</h3>
+     <div class="grid md:grid-cols-3 gap-8">
+      <div class="text-center">
+       <img data-template-id="doctor1-image" class="canva-image w-40 h-40 rounded-full object-cover mx-auto shadow-lg" loading="lazy" src="https://images.pexels.com/photos/4989135/pexels-photo-4989135.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Cheerful male doctor wearing eyeglasses and a stethoscope.">
+       <h4 data-template-id="doctor1-name" class="canva-text mt-4 font-bold" style="color: rgb(17, 24, 39); font-weight: 700; font-style: normal; font-size: 16px;">Dr. Adeyemi Okafor</h4>
+       <p data-template-id="doctor1-role" class="canva-text mt-1" style="color: rgb(13, 148, 136); font-weight: 400; font-style: normal; font-size: 16px;">Chief Medical Officer</p>
+      </div>
+      <div class="text-center">
+       <img data-template-id="doctor2-image" class="canva-image w-40 h-40 rounded-full object-cover mx-auto shadow-lg" loading="lazy" src="https://images.pexels.com/photos/5234473/pexels-photo-5234473.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Portrait of a female doctor with afro hair wearing glasses and a stethoscope.">
+       <h4 data-template-id="doctor2-name" class="canva-text mt-4 font-bold" style="color: rgb(17, 24, 39); font-weight: 700; font-style: normal; font-size: 16px;">Dr. Amara Nwosu</h4>
+       <p data-template-id="doctor2-role" class="canva-text mt-1" style="color: rgb(13, 148, 136); font-weight: 400; font-style: normal; font-size: 16px;">Obstetrics &amp; Gynaecology</p>
+      </div>
+      <div class="text-center">
+       <img data-template-id="doctor3-image" class="canva-image w-40 h-40 rounded-full object-cover mx-auto shadow-lg" loading="lazy" src="https://images.pexels.com/photos/6129496/pexels-photo-6129496.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Smiling woman healthcare worker in blue scrubs standing confidently indoors.">
+       <h4 data-template-id="doctor3-name" class="canva-text mt-4 font-bold" style="color: rgb(17, 24, 39); font-weight: 700; font-style: normal; font-size: 16px;">Dr. Fatima Bello</h4>
+       <p data-template-id="doctor3-role" class="canva-text mt-1" style="color: rgb(13, 148, 136); font-weight: 400; font-style: normal; font-size: 16px;">Paediatrics</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Testimonials -->
+   <section data-template-id="testimonials-section" class="canva-section w-full py-20" style="background: rgb(240, 253, 250);">
+    <div class="max-w-5xl mx-auto px-4">
+     <h3 data-template-id="testimonials-title" class="canva-text font-heading text-center mb-12" style="color: rgb(19, 78, 74); font-weight: 700; font-style: normal; font-size: 19px;">What Our Patients Say</h3>
+     <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-white p-8 rounded-2xl shadow-md">
+       <p data-template-id="testimonial1-text" class="canva-text italic leading-relaxed" style="color: rgb(55, 65, 81); font-weight: 400; font-style: normal; font-size: 16px;">"MedCare Hospital gave me the best maternity experience. The staff were incredibly attentive and caring throughout my journey."</p>
+       <div class="flex items-center mt-6 gap-4">
+        <img data-template-id="testimonial1-image" class="canva-image w-12 h-12 rounded-full object-cover" loading="lazy" src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400" alt="Cheerful young African American woman smiling."> <span data-template-id="testimonial1-name" class="canva-text font-semibold" style="color: rgb(17, 24, 39); font-weight: 600; font-style: normal; font-size: 16px;">Chidinma A.</span>
+       </div>
+      </div>
+      <div class="bg-white p-8 rounded-2xl shadow-md">
+       <p data-template-id="testimonial2-text" class="canva-text italic leading-relaxed" style="color: rgb(55, 65, 81); font-weight: 400; font-style: normal; font-size: 16px;">"Professional, efficient, and genuinely caring. I trust MedCare with my family's health completely."</p>
+       <div class="flex items-center mt-6 gap-4">
+        <img data-template-id="testimonial2-image" class="canva-image w-12 h-12 rounded-full object-cover" loading="lazy" src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=400" alt="Close-up portrait of a handsome man smiling warmly."> <span data-template-id="testimonial2-name" class="canva-text font-semibold" style="color: rgb(17, 24, 39); font-weight: 600; font-style: normal; font-size: 16px;">Emeka O.</span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- YouTube Video -->
+   <section class="w-full py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+     <h3 data-template-id="video-title" class="canva-text font-heading mb-8" style="color: rgb(19, 78, 74); font-weight: 700; font-style: normal; font-size: 19px;">Take a Virtual Tour</h3>
+     <div class="relative w-full" style="padding-bottom:56.25%;">
+      <iframe class="absolute inset-0 w-full h-full rounded-2xl shadow-lg" src="https://www.youtube.com/embed/5XhxR9Vs6zc" title="Hospital virtual tour video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="" loading="lazy"></iframe>
+     </div>
+     <p data-template-id="video-desc" class="canva-text mt-4" style="color: rgb(75, 85, 99); font-weight: 400; font-style: normal; font-size: 16px;">Watch our facility tour and learn more about the services we offer.</p>
+    </div>
+   </section><!-- Google Maps -->
+   <section id="contact" class="w-full py-20" data-template-id="map-section" style="background: rgb(255, 255, 255);">
+    <div class="max-w-7xl mx-auto px-4">
+     <h3 data-template-id="map-title" class="canva-text font-heading text-center mb-8" style="color: rgb(19, 78, 74); font-weight: 700; font-style: normal; font-size: 19px;">Find Us</h3>
+     <div class="w-full h-96 rounded-2xl overflow-hidden shadow-lg">
+      <iframe src="https://www.google.com/maps?q=6.5848341,3.4921721&amp;z=15&amp;output=embed" title="Map showing the hospital location" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+     </div>
+     <p data-template-id="map-address" class="canva-text text-center mt-4" style="color: rgb(75, 85, 99); font-weight: 400; font-style: normal; font-size: 16px;">25 Medical Drive, Victoria Island, Lagos, Nigeria</p>
+    </div>
+   </section><!-- Contact Form -->
+   <section id="contact-form" class="w-full py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4">
+     <h3 data-template-id="contact-title" class="canva-text font-heading text-center mb-12" style="color: rgb(19, 78, 74); font-weight: 700; font-style: normal; font-size: 28px;">Get In Touch</h3>
+     <div class="grid md:grid-cols-3 gap-8 mb-12">
+      <div class="text-center">
+       <div class="flex justify-center mb-4"><i data-lucide="phone" class="w-8 h-8" style="color: #0d9488;"></i>
+       </div>
+       <h4 data-template-id="contact-phone-label" class="canva-text font-semibold mb-2" style="color: rgb(17, 24, 39); font-weight: 700; font-style: normal; font-size: 16px;">Phone</h4>
+       <p data-template-id="contact-phone-value" class="canva-text" style="color: rgb(75, 85, 99); font-weight: 400; font-style: normal; font-size: 16px;">+234 701 234 567</p>
+      </div>
+      <div class="text-center">
+       <div class="flex justify-center mb-4"><i data-lucide="mail" class="w-8 h-8" style="color: #0d9488;"></i>
+       </div>
+       <h4 data-template-id="contact-email-label" class="canva-text font-semibold mb-2" style="color: rgb(17, 24, 39); font-weight: 700; font-style: normal; font-size: 16px;">Email</h4>
+       <p data-template-id="contact-email-value" class="canva-text" style="color: rgb(75, 85, 99); font-weight: 400; font-style: normal; font-size: 16px;">info@medcarehospital.com</p>
+      </div>
+      <div class="text-center">
+       <div class="flex justify-center mb-4"><i data-lucide="clock" class="w-8 h-8" style="color: #0d9488;"></i>
+       </div>
+       <h4 data-template-id="contact-hours-label" class="canva-text font-semibold mb-2" style="color: rgb(17, 24, 39); font-weight: 700; font-style: normal; font-size: 16px;">Hours</h4>
+       <p data-template-id="contact-hours-value" class="canva-text" style="color: rgb(75, 85, 99); font-weight: 400; font-style: normal; font-size: 16px;">24/7 Emergency | Mon-Fri 8am-6pm</p>
+      </div>
+     </div>
+     <div class="bg-gray-50 p-4 md:p-8 rounded-2xl overflow-hidden">
+      <script type="text/javascript" src="https://form.jotform.com/jsform/261697447019063"></script>
+     </div>
+    </div>
+   </section><!-- Social Media & WhatsApp -->
+   <section class="w-full py-12 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-4 flex justify-center gap-8 items-center flex-wrap">
+     <h4 data-template-id="social-title" class="canva-text font-semibold w-full text-center mb-4" style="color: rgb(17, 24, 39); font-weight: 700; font-style: normal; font-size: 16px;">Connect With Us</h4><a id="instagram-link" target="_blank" rel="noopener noreferrer" class="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition"> <i data-lucide="instagram" class="w-6 h-6" style="color: #e1306c;"></i> </a> <a id="facebook-link" target="_blank" rel="noopener noreferrer" class="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition"> <i data-lucide="facebook" class="w-6 h-6" style="color: #1877f2;"></i> </a> <a id="twitter-link" target="_blank" rel="noopener noreferrer" class="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition"> <i data-lucide="twitter" class="w-6 h-6" style="color: #1da1f2;"></i> </a> <a id="whatsapp-link" target="_blank" rel="noopener noreferrer" class="p-3 bg-white rounded-full shadow-md hover:shadow-lg transition"> <i data-lucide="message-circle" class="w-6 h-6" style="color: #25d366;"></i> </a>
+    </div>
+   </section><!-- HMO Partners -->
+   <section id="hmo-partners" class="w-full py-20 bg-white scroll-mt-20">
+    <div class="max-w-7xl mx-auto px-4">
+     <h3 data-template-id="hmo-title" class="canva-text font-heading text-center mb-12" style="color: rgb(19, 78, 74); font-weight: 700; font-style: normal; font-size: 28px;">Accepted HMO Partners</h3>
+     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-1-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=AXA+Mansard" alt="Axa Mansard logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-1" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Axa Mansard</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-2-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=ALICO" alt="ALICO logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-2" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">ALICO</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-3-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Aviva" alt="Aviva logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-3" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Aviva</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-4-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Consolidated" alt="Consolidated HMO logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-4" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Consolidated HMO</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-5-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Cornerstone" alt="Cornerstone logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-5" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Cornerstone</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-6-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Envoy" alt="Envoy logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-6" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Envoy</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-7-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=EHO" alt="EHO logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-7" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">EHO</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-8-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Health+Plus" alt="Health Plus logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-8" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Health Plus</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-9-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Hygeia" alt="Hygeia HMO logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-9" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Hygeia HMO</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-10-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=I-Care" alt="I-Care logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-10" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">I-Care</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-11-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Leadcare" alt="Leadcare logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-11" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Leadcare</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-12-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Liberty" alt="Liberty HMO logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-12" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Liberty HMO</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-13-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=NHIA" alt="NHIA logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-13" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">NHIA</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-14-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=PharmaCare" alt="PharmaCare logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-14" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">PharmaCare</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-15-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Saint+Nicholas" alt="Saint Nicholas logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-15" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Saint Nicholas</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-16-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Smile+HMO" alt="Smile HMO logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-16" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Smile HMO</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-17-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=The+HealthCare" alt="The HealthCare logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-17" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">The HealthCare</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-18-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Vanguard" alt="Vanguard logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-18" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Vanguard</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-19-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=Wellness+HMO" alt="Wellness HMO logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-19" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">Wellness HMO</figcaption></figure>
+      <figure class="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg hover:-translate-y-1 transition duration-300"><div class="h-32 bg-teal-50 flex items-center justify-center p-4"><img data-template-id="hmo-20-image" src="https://placehold.co/240x120/e6fffb/0f766e?text=ZestMedical" alt="ZestMedical logo" class="w-full h-full object-contain" loading="lazy"></div><figcaption data-template-id="hmo-20" class="canva-text text-center font-semibold px-3 py-4 text-gray-700">ZestMedical</figcaption></figure>
+     </div>
+    </div>
+   </section>
+  </main><!-- Footer -->
+  <footer data-template-id="footer-section" class="canva-footer w-full py-12" style="background: rgb(19, 78, 74);">
+   <div class="max-w-7xl mx-auto px-4 text-center">
+    <p data-template-id="footer-text" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 MedCare Hospital. All rights reserved.</p>
+   </div>
+  </footer>
+  <script src="/_sdk/editing_sdk.js"></script>
+  <script>
+        lucide.createIcons();
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Social media links
+        document.getElementById('instagram-link').href = 'https://instagram.com/medcarehospital';
+        document.getElementById('facebook-link').href = 'https://facebook.com/medcarehospital';
+        document.getElementById('twitter-link').href = 'https://twitter.com/medcarehospital';
+        document.getElementById('whatsapp-link').href = 'https://wa.me/234701234567?text=Hello%20MedCare%20Hospital';
+
+        // Refresh the page shortly after a successful Jotform submission.
+        let pageRefreshScheduled = false;
+        window.addEventListener('message', function(event) {
+            let originHost;
+            try {
+                originHost = new URL(event.origin).hostname;
+            } catch (error) {
+                return;
+            }
+
+            const isJotformOrigin = originHost === 'jotform.com'
+                || originHost.endsWith('.jotform.com');
+            const isSuccessfulSubmission = event.data
+                && typeof event.data === 'object'
+                && event.data.action === 'submission-completed'
+                && String(event.data.formID) === '261697447019063';
+
+            if (isJotformOrigin && isSuccessfulSubmission && !pageRefreshScheduled) {
+                pageRefreshScheduled = true;
+                window.setTimeout(function() {
+                    window.location.reload();
+                }, 3000);
+            }
+        });
+
+    </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0e5b6206421d178',t:'MTc4MTkwNTQyOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body></html>
